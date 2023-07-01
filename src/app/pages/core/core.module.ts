@@ -1,5 +1,5 @@
 /* --- PAGES --- */
-import { CorePage } from './core/core.page'
+import { CorePage } from './core.page'
 
 /* --- MODULES --- */
 import { NgModule } from '@angular/core'
@@ -13,22 +13,21 @@ import { MatSidenavModule } from '@angular/material/sidenav'
 import { Routes, RouterModule } from '@angular/router'
 
 const routes: Routes = [
-
   {
-    path: 'core',
+    path: '',
     component: CorePage
   },
   {
-    path: 'core/:section',
+    path: ':section',
     component: CorePage
   },
   {
-    path: 'core/:section/:subsection',
+    path: ':section/:subsection',
     component: CorePage
   },
   {
     path: '**',
-    redirectTo: 'core'
+    redirectTo: ''
   }
 ]
 
@@ -48,4 +47,4 @@ const routes: Routes = [
   ]
 })
 
-export class DocsPageModule { }
+export class CorePageModule { }

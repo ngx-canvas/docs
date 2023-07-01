@@ -19,11 +19,11 @@ export class CorePage implements AfterViewInit {
     this.http.get('./assets/data.json').subscribe((data: any) => {
       this.folders = data.filter((o: any) => o.project === 'core')[0].folders
       this.folders.forEach(folder => {
-        folder.id = `docs-core-${folder.name.toLowerCase()}`
-        folder.route = `/docs/core/${folder.name.toLowerCase()}`
+        folder.id = `core-${folder.name.toLowerCase().split(' ').join('-')}`
+        folder.route = `/core/${folder.name.toLowerCase().split(' ').join('-')}`
         folder.items.forEach(item => {
-          item.id = `docs-core-${folder.name.toLowerCase()}-${item.title.toLowerCase()}`
-          item.route = `/docs/core/${folder.name.toLowerCase()}/${item.title.toLowerCase()}`
+          item.id = `core-${folder.name.toLowerCase().split(' ').join('-')}-${item.title.toLowerCase().split(' ').join('-')}`
+          item.route = `/core/${folder.name.toLowerCase().split(' ').join('-')}/${item.title.toLowerCase().split(' ').join('-')}`
         })
       })
       done()
@@ -34,7 +34,7 @@ export class CorePage implements AfterViewInit {
     this.title.setTitle('NGXCANVAS | CORE DOCS')
 
     this.route.params.subscribe((params: any) => {
-      const id = ['docs', 'core']
+      const id = ['core']
       if (params.section) id.push(params.section)
       if (params.subsection) id.push(params.subsection)
       const element = document.getElementById(id.join('-'))
@@ -44,14 +44,14 @@ export class CorePage implements AfterViewInit {
     this.load(() => {
       setTimeout(() => {
         const params: any = this.route.snapshot.params
-        const id = ['docs', 'core']
+        const id = ['core']
         if (params.section) id.push(params.section)
         if (params.subsection) id.push(params.subsection)
         const element = document.getElementById(id.join('-'))
         if (element != null) element.scrollIntoView({ behavior: 'smooth' })
       }, 200)
     })
-  };
+  }
 }
 
 interface FOLDER {

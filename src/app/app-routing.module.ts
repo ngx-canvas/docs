@@ -3,8 +3,8 @@ import { Routes, RouterModule } from '@angular/router'
 
 const routes: Routes = [
   {
-    path: 'docs',
-    loadChildren: () => import('./pages/docs/docs.module').then(m => m.DocsPageModule)
+    path: 'core',
+    loadChildren: () => import('./pages/core/core.module').then(m => m.CorePageModule)
   },
   {
     path: 'donate',
@@ -12,7 +12,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: 'docs'
+    redirectTo: 'core'
   }
 ]
 
