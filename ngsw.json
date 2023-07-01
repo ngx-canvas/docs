@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1688212436184,
+  "timestamp": 1688213115939,
   "index": "https://ngx-canvas.github.io/docs/index.html",
   "assetGroups": [
     {
@@ -11,14 +11,14 @@
         "ignoreVary": true
       },
       "urls": [
-        "https://ngx-canvas.github.io/docs/358.4298b71ed5b26786.js",
         "https://ngx-canvas.github.io/docs/394.3930a0a90dec1102.js",
+        "https://ngx-canvas.github.io/docs/737.e6a6a3a93e9db96c.js",
         "https://ngx-canvas.github.io/docs/favicon.ico",
         "https://ngx-canvas.github.io/docs/index.html",
-        "https://ngx-canvas.github.io/docs/main.0fd053a27596b1c7.js",
+        "https://ngx-canvas.github.io/docs/main.8a907b40f7d70855.js",
         "https://ngx-canvas.github.io/docs/manifest.webmanifest",
         "https://ngx-canvas.github.io/docs/polyfills.1180ee621ef3ff08.js",
-        "https://ngx-canvas.github.io/docs/runtime.e9296ff04c5b9d94.js",
+        "https://ngx-canvas.github.io/docs/runtime.0ebdbe1ad29cb8b5.js",
         "https://ngx-canvas.github.io/docs/styles.6debb35f8b071869.css"
       ],
       "patterns": []
@@ -55,8 +55,8 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "https://ngx-canvas.github.io/docs/358.4298b71ed5b26786.js": "410e6e3f8e4f71febaeaa1ed4cbcb901eea0c95f",
     "https://ngx-canvas.github.io/docs/394.3930a0a90dec1102.js": "dbed401570520e2ff9a0054e4004dfdf7cdf8216",
+    "https://ngx-canvas.github.io/docs/737.e6a6a3a93e9db96c.js": "f368ee25e0b2603a45f833b38f8d481cc72e6fb9",
     "https://ngx-canvas.github.io/docs/assets/buy-me-a-coffee.png": "43bc32079f11c6caa1c65cdbc6b91b2b05de0edf",
     "https://ngx-canvas.github.io/docs/assets/data.json": "3a343eac4c2235c94366c1868289d4cdc4832fbc",
     "https://ngx-canvas.github.io/docs/assets/fiverr.png": "eb167f41b611ddc271cd280cd97d85a7a415b8e0",
@@ -76,11 +76,11 @@
     "https://ngx-canvas.github.io/docs/assets/prettify.js": "c8b3889f6a71622539e5bc4db511b934cb62b6e0",
     "https://ngx-canvas.github.io/docs/assets/upwork.png": "f7785b49afc640c0bc0073c19d137e776c61d39c",
     "https://ngx-canvas.github.io/docs/favicon.ico": "4c50c893762991a06a84b22e5641ed6ee5037734",
-    "https://ngx-canvas.github.io/docs/index.html": "a9763e98eeeb87fb0e82c1f9f2de351249a32f6e",
-    "https://ngx-canvas.github.io/docs/main.0fd053a27596b1c7.js": "c980bb3fd07d51f09f8b6c309865ffdf6f9b73f4",
+    "https://ngx-canvas.github.io/docs/index.html": "5060730923a2371dd0d6f67dfd7b67b0403871d6",
+    "https://ngx-canvas.github.io/docs/main.8a907b40f7d70855.js": "f65e078f770247418bd6f9b4e7ff7f2519a19173",
     "https://ngx-canvas.github.io/docs/manifest.webmanifest": "7f62b3f33b271993c036cd8a876fedf216208fe5",
     "https://ngx-canvas.github.io/docs/polyfills.1180ee621ef3ff08.js": "628a7a4cfd11f3b19ec1e7074c7e8a0dfd71d50a",
-    "https://ngx-canvas.github.io/docs/runtime.e9296ff04c5b9d94.js": "5bc3384babe270b1781e891ccf0a9d36f2bdeabb",
+    "https://ngx-canvas.github.io/docs/runtime.0ebdbe1ad29cb8b5.js": "4133080589ff381401fb9fee26ecbdd21052f63d",
     "https://ngx-canvas.github.io/docs/styles.6debb35f8b071869.css": "ba85d4e2b6bb62a2ce141358837a771402cc7ab4"
   },
   "navigationUrls": [
