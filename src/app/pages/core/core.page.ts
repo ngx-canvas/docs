@@ -1,7 +1,7 @@
 import { Title } from '@angular/platform-browser'
 import { Clipboard } from '@angular/cdk/clipboard'
 import { HttpClient } from '@angular/common/http'
-import { ActivatedRoute } from '@angular/router'
+import { Router, ActivatedRoute } from '@angular/router'
 import { Component, AfterViewInit } from '@angular/core'
 
 @Component({
@@ -11,11 +11,11 @@ import { Component, AfterViewInit } from '@angular/core'
 })
 
 export class CorePage implements AfterViewInit {
-  constructor (private readonly http: HttpClient, private readonly title: Title, private readonly route: ActivatedRoute, public clipboard: Clipboard) {}
+  constructor(private readonly http: HttpClient, private readonly title: Title, private readonly route: ActivatedRoute, private router: Router, public clipboard: Clipboard) { }
 
   public folders: FOLDER[] = []
 
-  private load (done: Function) {
+  private load(done: Function) {
     this.http.get('./assets/data.json').subscribe((data: any) => {
       this.folders = data.filter((o: any) => o.project === 'core')[0].folders
       this.folders.forEach(folder => {
@@ -30,7 +30,16 @@ export class CorePage implements AfterViewInit {
     })
   }
 
-  ngAfterViewInit (): void {
+  ngAfterViewInit(): void {
+    document.addEventListener('click', (event: any) => {
+      if (event.target?.tagName === 'A') {
+        if (event.target.href.includes('unsafe:ng://')) {
+          event.preventDefault()
+          this.router.navigate([event.target.href.replace('unsafe:ng://', '/')])
+        }
+      }
+    }, false)
+
     this.title.setTitle('NGXCANVAS | CORE DOCS')
 
     this.route.params.subscribe((params: any) => {

@@ -52,19 +52,19 @@
                 "name": "id",
                 "type": "String",
                 "default": "ObjectId()",
-                "required": "Required",
+                "required": "Optional",
                 "description": ""
               },
               {
                 "name": "fill",
-                "type": "Fill",
+                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
                 "description": ""
               },
               {
                 "name": "font",
-                "type": "Font",
+                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
                 "description": ""
@@ -99,7 +99,7 @@
               },
               {
                 "name": "stroke",
-                "type": "Stroke",
+                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
                 "description": ""
@@ -127,7 +127,7 @@
               },
               {
                 "name": "position",
-                "type": "Position",
+                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
                 "description": ""
@@ -163,19 +163,19 @@
                 "name": "id",
                 "type": "String",
                 "default": "ObjectId()",
-                "required": "Required",
+                "required": "Optional",
                 "description": ""
               },
               {
                 "name": "fill",
-                "type": "Fill",
+                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
                 "description": ""
               },
               {
                 "name": "font",
-                "type": "Font",
+                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
                 "description": ""
@@ -203,7 +203,7 @@
               },
               {
                 "name": "stroke",
-                "type": "Stroke",
+                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
                 "description": ""
@@ -231,7 +231,7 @@
               },
               {
                 "name": "position",
-                "type": "Position",
+                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
                 "description": ""
@@ -262,19 +262,19 @@
                 "name": "id",
                 "type": "String",
                 "default": "ObjectId()",
-                "required": "Required",
+                "required": "Optional",
                 "description": ""
               },
               {
                 "name": "fill",
-                "type": "Fill",
+                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
                 "description": ""
               },
               {
                 "name": "font",
-                "type": "Font",
+                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
                 "description": ""
@@ -302,7 +302,7 @@
               },
               {
                 "name": "stroke",
-                "type": "Stroke",
+                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
                 "description": ""
@@ -330,7 +330,7 @@
               },
               {
                 "name": "position",
-                "type": "Position",
+                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
                 "description": ""
@@ -361,19 +361,19 @@
                 "name": "id",
                 "type": "String",
                 "default": "ObjectId()",
-                "required": "Required",
+                "required": "Optional",
                 "description": ""
               },
               {
                 "name": "fill",
-                "type": "Fill",
+                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
                 "description": ""
               },
               {
                 "name": "font",
-                "type": "Font",
+                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
                 "description": ""
@@ -401,7 +401,7 @@
               },
               {
                 "name": "stroke",
-                "type": "Stroke",
+                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
                 "description": ""
@@ -436,7 +436,7 @@
               },
               {
                 "name": "position",
-                "type": "Position",
+                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
                 "description": ""
@@ -467,19 +467,19 @@
                 "name": "id",
                 "type": "String",
                 "default": "ObjectId()",
-                "required": "Required",
+                "required": "Optional",
                 "description": ""
               },
               {
                 "name": "fill",
-                "type": "Fill",
+                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
                 "description": ""
               },
               {
                 "name": "font",
-                "type": "Font",
+                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
                 "description": ""
@@ -507,7 +507,7 @@
               },
               {
                 "name": "stroke",
-                "type": "Stroke",
+                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
                 "description": ""
@@ -535,7 +535,7 @@
               },
               {
                 "name": "position",
-                "type": "Position",
+                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
                 "description": ""
@@ -566,19 +566,19 @@
                 "name": "id",
                 "type": "String",
                 "default": "ObjectId()",
-                "required": "Required",
+                "required": "Optional",
                 "description": ""
               },
               {
                 "name": "fill",
-                "type": "Fill",
+                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
                 "description": ""
               },
               {
                 "name": "font",
-                "type": "Font",
+                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
                 "description": ""
@@ -606,7 +606,7 @@
               },
               {
                 "name": "stroke",
-                "type": "Stroke",
+                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
                 "description": ""
@@ -634,7 +634,7 @@
               },
               {
                 "name": "position",
-                "type": "Position",
+                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
                 "description": ""
@@ -665,19 +665,19 @@
                 "name": "id",
                 "type": "String",
                 "default": "ObjectId()",
-                "required": "Required",
+                "required": "Optional",
                 "description": ""
               },
               {
                 "name": "fill",
-                "type": "Fill",
+                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
                 "description": ""
               },
               {
                 "name": "font",
-                "type": "Font",
+                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
                 "description": ""
@@ -705,7 +705,7 @@
               },
               {
                 "name": "stroke",
-                "type": "Stroke",
+                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
                 "description": ""
@@ -733,7 +733,7 @@
               },
               {
                 "name": "position",
-                "type": "Position",
+                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
                 "description": ""
@@ -764,19 +764,19 @@
                 "name": "id",
                 "type": "String",
                 "default": "ObjectId()",
-                "required": "Required",
+                "required": "Optional",
                 "description": ""
               },
               {
                 "name": "fill",
-                "type": "Fill",
+                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
                 "description": ""
               },
               {
                 "name": "font",
-                "type": "Font",
+                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
                 "description": ""
@@ -804,7 +804,7 @@
               },
               {
                 "name": "stroke",
-                "type": "Stroke",
+                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
                 "description": ""
@@ -839,7 +839,7 @@
               },
               {
                 "name": "position",
-                "type": "Position",
+                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
                 "description": ""
@@ -870,19 +870,19 @@
                 "name": "id",
                 "type": "String",
                 "default": "ObjectId()",
-                "required": "Required",
+                "required": "Optional",
                 "description": ""
               },
               {
                 "name": "fill",
-                "type": "Fill",
+                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
                 "description": ""
               },
               {
                 "name": "font",
-                "type": "Font",
+                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
                 "description": ""
@@ -917,7 +917,7 @@
               },
               {
                 "name": "stroke",
-                "type": "Stroke",
+                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
                 "description": ""
@@ -945,7 +945,7 @@
               },
               {
                 "name": "position",
-                "type": "Position",
+                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
                 "description": ""
@@ -976,19 +976,19 @@
                 "name": "id",
                 "type": "String",
                 "default": "ObjectId()",
-                "required": "Required",
+                "required": "Optional",
                 "description": ""
               },
               {
                 "name": "fill",
-                "type": "Fill",
+                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
                 "description": ""
               },
               {
                 "name": "font",
-                "type": "Font",
+                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
                 "description": ""
@@ -1023,7 +1023,7 @@
               },
               {
                 "name": "stroke",
-                "type": "Stroke",
+                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
                 "description": ""
@@ -1051,7 +1051,7 @@
               },
               {
                 "name": "position",
-                "type": "Position",
+                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
                 "description": ""
@@ -1082,19 +1082,19 @@
                 "name": "id",
                 "type": "String",
                 "default": "ObjectId()",
-                "required": "Required",
+                "required": "Optional",
                 "description": ""
               },
               {
                 "name": "fill",
-                "type": "Fill",
+                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
                 "description": ""
               },
               {
                 "name": "font",
-                "type": "Font",
+                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
                 "description": ""
@@ -1129,7 +1129,7 @@
               },
               {
                 "name": "stroke",
-                "type": "Stroke",
+                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
                 "description": ""
@@ -1157,7 +1157,7 @@
               },
               {
                 "name": "position",
-                "type": "Position",
+                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
                 "description": ""
@@ -1188,19 +1188,19 @@
                 "name": "id",
                 "type": "String",
                 "default": "ObjectId()",
-                "required": "Required",
+                "required": "Optional",
                 "description": ""
               },
               {
                 "name": "fill",
-                "type": "Fill",
+                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
                 "description": ""
               },
               {
                 "name": "font",
-                "type": "Font",
+                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
                 "description": ""
@@ -1235,7 +1235,7 @@
               },
               {
                 "name": "stroke",
-                "type": "Stroke",
+                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
                 "description": ""
@@ -1263,7 +1263,7 @@
               },
               {
                 "name": "position",
-                "type": "Position",
+                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
                 "description": ""
@@ -1299,7 +1299,7 @@
                 "name": "id",
                 "type": "String",
                 "default": "ObjectId()",
-                "required": "Required",
+                "required": "Optional",
                 "description": ""
               },
               {
@@ -1325,14 +1325,14 @@
               },
               {
                 "name": "fill",
-                "type": "Fill",
+                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
                 "description": ""
               },
               {
                 "name": "font",
-                "type": "Font",
+                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
                 "description": ""
@@ -1367,7 +1367,7 @@
               },
               {
                 "name": "stroke",
-                "type": "Stroke",
+                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
                 "description": ""
@@ -1395,7 +1395,7 @@
               },
               {
                 "name": "position",
-                "type": "Position",
+                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
                 "description": ""
@@ -1426,19 +1426,19 @@
                 "name": "id",
                 "type": "String",
                 "default": "ObjectId()",
-                "required": "Required",
+                "required": "Optional",
                 "description": ""
               },
               {
                 "name": "fill",
-                "type": "Fill",
+                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
                 "description": ""
               },
               {
                 "name": "font",
-                "type": "Font",
+                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
                 "description": ""
@@ -1466,7 +1466,7 @@
               },
               {
                 "name": "stroke",
-                "type": "Stroke",
+                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
                 "description": ""
@@ -1494,7 +1494,7 @@
               },
               {
                 "name": "position",
-                "type": "Position",
+                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
                 "description": ""
@@ -1525,19 +1525,19 @@
                 "name": "id",
                 "type": "String",
                 "default": "ObjectId()",
-                "required": "Required",
+                "required": "Optional",
                 "description": ""
               },
               {
                 "name": "fill",
-                "type": "Fill",
+                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
                 "description": ""
               },
               {
                 "name": "font",
-                "type": "Font",
+                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
                 "description": ""
@@ -1565,7 +1565,7 @@
               },
               {
                 "name": "stroke",
-                "type": "Stroke",
+                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
                 "description": ""
@@ -1600,7 +1600,7 @@
               },
               {
                 "name": "position",
-                "type": "Position",
+                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
                 "description": ""
@@ -1631,7 +1631,7 @@
                 "name": "id",
                 "type": "String",
                 "default": "ObjectId()",
-                "required": "Required",
+                "required": "Optional",
                 "description": ""
               },
               {
@@ -1643,14 +1643,14 @@
               },
               {
                 "name": "fill",
-                "type": "Fill",
+                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
                 "description": ""
               },
               {
                 "name": "font",
-                "type": "Font",
+                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
                 "description": ""
@@ -1692,7 +1692,7 @@
               },
               {
                 "name": "stroke",
-                "type": "Stroke",
+                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
                 "description": ""
@@ -1720,7 +1720,7 @@
               },
               {
                 "name": "position",
-                "type": "Position",
+                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
                 "description": ""
@@ -1751,19 +1751,19 @@
                 "name": "id",
                 "type": "String",
                 "default": "ObjectId()",
-                "required": "Required",
+                "required": "Optional",
                 "description": ""
               },
               {
                 "name": "fill",
-                "type": "Fill",
+                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
                 "description": ""
               },
               {
                 "name": "font",
-                "type": "Font",
+                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
                 "description": ""
@@ -1798,7 +1798,7 @@
               },
               {
                 "name": "stroke",
-                "type": "Stroke",
+                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
                 "description": ""
@@ -1826,7 +1826,7 @@
               },
               {
                 "name": "position",
-                "type": "Position",
+                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
                 "description": ""
@@ -1857,7 +1857,7 @@
                 "name": "id",
                 "type": "String",
                 "default": "ObjectId()",
-                "required": "Required",
+                "required": "Optional",
                 "description": ""
               },
               {
@@ -1869,14 +1869,14 @@
               },
               {
                 "name": "fill",
-                "type": "Fill",
+                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
                 "description": ""
               },
               {
                 "name": "font",
-                "type": "Font",
+                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
                 "description": ""
@@ -1904,7 +1904,7 @@
               },
               {
                 "name": "stroke",
-                "type": "Stroke",
+                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
                 "description": ""
@@ -1932,7 +1932,7 @@
               },
               {
                 "name": "position",
-                "type": "Position",
+                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
                 "description": ""
