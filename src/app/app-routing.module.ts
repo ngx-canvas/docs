@@ -7,10 +7,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/core/core.module').then(m => m.CorePageModule)
   },
   {
-    path: 'donate',
-    loadChildren: () => import('./pages/donate/donate.module').then(m => m.DonatePageModule)
-  },
-  {
     path: '**',
     redirectTo: 'core'
   }
