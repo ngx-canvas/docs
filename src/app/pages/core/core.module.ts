@@ -16,18 +16,18 @@ const routes: Routes = [
   {
     path: '',
     component: CorePage
-  },
-  {
-    path: ':section',
-    component: CorePage
-  },
-  {
-    path: ':section/:subsection',
-    component: CorePage
-  },
-  {
-    path: '**',
-    redirectTo: ''
+  // },
+  // {
+  //   path: ':section',
+  //   component: CorePage
+  // },
+  // {
+  //   path: ':section/:subsection',
+  //   component: CorePage
+  // },
+  // {
+  //   path: '**',
+  //   redirectTo: ''
   }
 ]
 
