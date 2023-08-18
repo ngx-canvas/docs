@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1691924608820,
+  "timestamp": 1692392417796,
   "index": "https://ngx-canvas.github.io/docs/index.html",
   "assetGroups": [
     {
@@ -11,14 +11,14 @@
         "ignoreVary": true
       },
       "urls": [
-        "https://ngx-canvas.github.io/docs/737.1da221877160d161.js",
+        "https://ngx-canvas.github.io/docs/737.8f08aca25d555e1d.js",
         "https://ngx-canvas.github.io/docs/favicon.ico",
         "https://ngx-canvas.github.io/docs/index.html",
-        "https://ngx-canvas.github.io/docs/main.1e77925d4ce03ebd.js",
+        "https://ngx-canvas.github.io/docs/main.37ec131b54e71385.js",
         "https://ngx-canvas.github.io/docs/manifest.webmanifest",
         "https://ngx-canvas.github.io/docs/polyfills.1180ee621ef3ff08.js",
-        "https://ngx-canvas.github.io/docs/runtime.236e18d484d54085.js",
-        "https://ngx-canvas.github.io/docs/styles.6debb35f8b071869.css"
+        "https://ngx-canvas.github.io/docs/runtime.289c2f434c9de198.js",
+        "https://ngx-canvas.github.io/docs/styles.cdd9f1216a2d2217.css"
       ],
       "patterns": []
     },
@@ -30,6 +30,9 @@
         "ignoreVary": true
       },
       "urls": [
+        "https://ngx-canvas.github.io/docs/Bungee-Regular.6fa9be062cafc884.ttf",
+        "https://ngx-canvas.github.io/docs/assets/Bungee/Bungee-Regular.ttf",
+        "https://ngx-canvas.github.io/docs/assets/Bungee/OFL.txt",
         "https://ngx-canvas.github.io/docs/assets/data.json",
         "https://ngx-canvas.github.io/docs/assets/donate.png",
         "https://ngx-canvas.github.io/docs/assets/github.png",
@@ -49,7 +52,10 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "https://ngx-canvas.github.io/docs/737.1da221877160d161.js": "a7001b5be2ec820c1c99e0102ec6ecad9e789731",
+    "https://ngx-canvas.github.io/docs/737.8f08aca25d555e1d.js": "40a3a55284f77d507ce2a27b6b029a42e355fe7e",
+    "https://ngx-canvas.github.io/docs/Bungee-Regular.6fa9be062cafc884.ttf": "5229858062d1cc9c3b96abf7a23c4fca2a78efd5",
+    "https://ngx-canvas.github.io/docs/assets/Bungee/Bungee-Regular.ttf": "5229858062d1cc9c3b96abf7a23c4fca2a78efd5",
+    "https://ngx-canvas.github.io/docs/assets/Bungee/OFL.txt": "016b0312263fdfa61f13d700037415b426ab63af",
     "https://ngx-canvas.github.io/docs/assets/data.json": "c670233d08d4746c03b144956e624b8014008fe4",
     "https://ngx-canvas.github.io/docs/assets/donate.png": "882291827755828638da5fd74a2fddbc2a5a1010",
     "https://ngx-canvas.github.io/docs/assets/github.png": "746a80bdc9994e56c90d5dba6a719e3103c46748",
@@ -64,12 +70,12 @@
     "https://ngx-canvas.github.io/docs/assets/icons/icon-96x96.png": "a924024e4e1237dd5dc221a4d3bd5df4e3eefba0",
     "https://ngx-canvas.github.io/docs/assets/prettify.js": "c8b3889f6a71622539e5bc4db511b934cb62b6e0",
     "https://ngx-canvas.github.io/docs/favicon.ico": "4c50c893762991a06a84b22e5641ed6ee5037734",
-    "https://ngx-canvas.github.io/docs/index.html": "94c1089a532a4517c729ea4178c78a22ca0b0b5c",
-    "https://ngx-canvas.github.io/docs/main.1e77925d4ce03ebd.js": "6dacfb93cdb7e4ce9e7f181a1a6f3467cea33d62",
+    "https://ngx-canvas.github.io/docs/index.html": "d4f5a474cf85bf15beefbb74867307af013877be",
+    "https://ngx-canvas.github.io/docs/main.37ec131b54e71385.js": "57df907405d0cec7223794bde6b1bac7e78061af",
     "https://ngx-canvas.github.io/docs/manifest.webmanifest": "7f62b3f33b271993c036cd8a876fedf216208fe5",
     "https://ngx-canvas.github.io/docs/polyfills.1180ee621ef3ff08.js": "628a7a4cfd11f3b19ec1e7074c7e8a0dfd71d50a",
-    "https://ngx-canvas.github.io/docs/runtime.236e18d484d54085.js": "a4eaf95ca7289a1e90eee79d66d2473f1b43daa9",
-    "https://ngx-canvas.github.io/docs/styles.6debb35f8b071869.css": "ba85d4e2b6bb62a2ce141358837a771402cc7ab4"
+    "https://ngx-canvas.github.io/docs/runtime.289c2f434c9de198.js": "b961748d311253643fa1f9c9954667752e3b84cd",
+    "https://ngx-canvas.github.io/docs/styles.cdd9f1216a2d2217.css": "a1e326dde85fdb337d1f1c815b06c099e4773755"
   },
   "navigationUrls": [
     {
