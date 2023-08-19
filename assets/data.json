@@ -5,7 +5,7 @@
       {
         "name": "Project",
         "subfolder": true,
-        "description": "This will add a button to the canvas",
+        "description": "",
         "inputs": [
           {
             "name": "id",
@@ -44,117 +44,6 @@
         "subfolder": true,
         "items": [
           {
-            "title": "Button",
-            "usage": "import { Button } from '@ngx-canvas/core';\n\nconst shape = new Button();",
-            "description": "This will add a button to the canvas",
-            "inputs": [
-              {
-                "name": "id",
-                "type": "String",
-                "default": "ObjectId()",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "fill",
-                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
-                "default": "new Fill()",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "font",
-                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
-                "default": "new Font()",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "data",
-                "type": "any",
-                "default": "",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "type",
-                "type": "String",
-                "default": "",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "name",
-                "type": "String",
-                "default": "",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "value",
-                "type": "String",
-                "default": "''",
-                "required": "optional",
-                "description": ""
-              },
-              {
-                "name": "stroke",
-                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
-                "default": "new Stroke()",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "hidden",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "selected",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "dragging",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "position",
-                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
-                "default": "new Position()",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "conditions",
-                "type": "any[]",
-                "default": "[]",
-                "required": "Optional",
-                "description": ""
-              }
-            ],
-            "outputs": [
-              {
-                "name": "click",
-                "type": "Function",
-                "description": ""
-              },
-              {
-                "name": "apply",
-                "type": "Function",
-                "description": ""
-              }
-            ],
-            "folder": "shapes"
-          },
-          {
             "title": "Chart",
             "usage": "import { Chart } from '@ngx-canvas/core';\n\nconst shape = new Chart();",
             "description": "This will add a chart to the canvas",
@@ -164,395 +53,182 @@
                 "type": "String",
                 "default": "ObjectId()",
                 "required": "Optional",
-                "description": ""
+                "description": "This is the unique identifier of a shape"
               },
               {
                 "name": "fill",
                 "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the fill color and style"
               },
               {
                 "name": "font",
                 "type": "<a href=\"ng://core/utilities/font\">Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the font color and style"
               },
               {
                 "name": "data",
                 "type": "any",
                 "default": "",
                 "required": "Optional",
-                "description": ""
+                "description": "Still thinking this one through, maybe just use to store data?"
               },
               {
                 "name": "type",
                 "type": "String",
                 "default": "",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the what shape is drawn on the canvas"
               },
               {
                 "name": "name",
                 "type": "String",
                 "default": "",
                 "required": "Optional",
-                "description": ""
+                "description": "You can use this to give names to your shapes"
               },
               {
                 "name": "stroke",
                 "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the stroke/line color and style"
               },
               {
                 "name": "hidden",
                 "type": "Boolean",
                 "default": "false",
                 "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "selected",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "dragging",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
+                "description": "This will control the visibility of a shape"
               },
               {
                 "name": "position",
                 "type": "<a href=\"ng://core/utilities/position\">Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will provide all coordinates and sizing of a shape"
               },
               {
                 "name": "conditions",
                 "type": "any[]",
                 "default": "[]",
                 "required": "Optional",
-                "description": ""
+                "description": "Still thinking this one through..."
               }
             ],
             "outputs": [
               {
                 "name": "apply",
                 "type": "Function",
-                "description": ""
+                "description": "Adds the shape to the canvas, can only be called once per shape"
+              },
+              {
+                "name": "update",
+                "type": "Function",
+                "description": "Modifies a shapes attributes and styles based on values supplied"
+              },
+              {
+                "name": "remove",
+                "type": "Function",
+                "description": "Removes the shape from the canvas, can only be called once per shape"
               }
             ],
             "folder": "shapes"
           },
           {
-            "title": "Circle",
-            "usage": "import { Circle } from '@ngx-canvas/core';\n\nconst shape = new Circle();",
-            "description": "This will add a circle to the canvas",
+            "title": "Curve",
+            "usage": "import { Curve } from '@ngx-canvas/core';\n\nconst shape = new Curve();",
+            "description": "This will add a curve to the canvas",
             "inputs": [
               {
                 "name": "id",
                 "type": "String",
                 "default": "ObjectId()",
                 "required": "Optional",
-                "description": ""
+                "description": "This is the unique identifier of a shape"
               },
               {
                 "name": "fill",
                 "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the fill color and style"
               },
               {
                 "name": "font",
                 "type": "<a href=\"ng://core/utilities/font\">Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the font color and style"
               },
               {
                 "name": "data",
                 "type": "any",
                 "default": "",
                 "required": "Optional",
-                "description": ""
+                "description": "Still thinking this one through, maybe just use to store data?"
               },
               {
                 "name": "type",
                 "type": "String",
                 "default": "",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the what shape is drawn on the canvas"
               },
               {
                 "name": "name",
                 "type": "String",
                 "default": "",
                 "required": "Optional",
-                "description": ""
+                "description": "You can use this to give names to your shapes"
               },
               {
                 "name": "stroke",
                 "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the stroke/line color and style"
               },
               {
                 "name": "hidden",
                 "type": "Boolean",
                 "default": "false",
                 "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "selected",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "dragging",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
+                "description": "This will control the visibility of a shape"
               },
               {
                 "name": "position",
                 "type": "<a href=\"ng://core/utilities/position\">Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will provide all coordinates and sizing of a shape"
               },
               {
                 "name": "conditions",
                 "type": "any[]",
                 "default": "[]",
                 "required": "Optional",
-                "description": ""
+                "description": "Still thinking this one through..."
               }
             ],
             "outputs": [
               {
                 "name": "apply",
                 "type": "Function",
-                "description": ""
-              }
-            ],
-            "folder": "shapes"
-          },
-          {
-            "title": "Column",
-            "usage": "import { Column } from '@ngx-canvas/core';\n\nconst shape = new Column();",
-            "description": "This will add a column to the canvas",
-            "inputs": [
-              {
-                "name": "id",
-                "type": "String",
-                "default": "ObjectId()",
-                "required": "Optional",
-                "description": ""
+                "description": "Adds the shape to the canvas, can only be called once per shape"
               },
               {
-                "name": "fill",
-                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
-                "default": "new Fill()",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "font",
-                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
-                "default": "new Font()",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "data",
-                "type": "any",
-                "default": "",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "type",
-                "type": "String",
-                "default": "",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "name",
-                "type": "String",
-                "default": "",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "stroke",
-                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
-                "default": "new Stroke()",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "hidden",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "children",
-                "type": "Shape[]",
-                "default": "[]",
-                "required": "optional",
-                "description": ""
-              },
-              {
-                "name": "selected",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "dragging",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "position",
-                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
-                "default": "new Position()",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "conditions",
-                "type": "any[]",
-                "default": "[]",
-                "required": "Optional",
-                "description": ""
-              }
-            ],
-            "outputs": [
-              {
-                "name": "apply",
+                "name": "update",
                 "type": "Function",
-                "description": ""
-              }
-            ],
-            "folder": "shapes"
-          },
-          {
-            "title": "Cubic Bezier Curve",
-            "usage": "import { CubicBezierCurve } from '@ngx-canvas/core';\n\nconst shape = new CubicBezierCurve();",
-            "description": "This will add a cubic bezier curve to the canvas",
-            "inputs": [
-              {
-                "name": "id",
-                "type": "String",
-                "default": "ObjectId()",
-                "required": "Optional",
-                "description": ""
+                "description": "Modifies a shapes attributes and styles based on values supplied"
               },
               {
-                "name": "fill",
-                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
-                "default": "new Fill()",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "font",
-                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
-                "default": "new Font()",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "data",
-                "type": "any",
-                "default": "",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "type",
-                "type": "String",
-                "default": "",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "name",
-                "type": "String",
-                "default": "",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "stroke",
-                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
-                "default": "new Stroke()",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "hidden",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "selected",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "dragging",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "position",
-                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
-                "default": "new Position()",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "conditions",
-                "type": "any[]",
-                "default": "[]",
-                "required": "Optional",
-                "description": ""
-              }
-            ],
-            "outputs": [
-              {
-                "name": "apply",
+                "name": "remove",
                 "type": "Function",
-                "description": ""
+                "description": "Removes the shape from the canvas, can only be called once per shape"
               }
             ],
             "folder": "shapes"
@@ -567,190 +243,87 @@
                 "type": "String",
                 "default": "ObjectId()",
                 "required": "Optional",
-                "description": ""
+                "description": "This is the unique identifier of a shape"
               },
               {
                 "name": "fill",
                 "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the fill color and style"
               },
               {
                 "name": "font",
                 "type": "<a href=\"ng://core/utilities/font\">Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the font color and style"
               },
               {
                 "name": "data",
                 "type": "any",
                 "default": "",
                 "required": "Optional",
-                "description": ""
+                "description": "Still thinking this one through, maybe just use to store data?"
               },
               {
                 "name": "type",
                 "type": "String",
                 "default": "",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the what shape is drawn on the canvas"
               },
               {
                 "name": "name",
                 "type": "String",
                 "default": "",
                 "required": "Optional",
-                "description": ""
+                "description": "You can use this to give names to your shapes"
               },
               {
                 "name": "stroke",
                 "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the stroke/line color and style"
               },
               {
                 "name": "hidden",
                 "type": "Boolean",
                 "default": "false",
                 "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "selected",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "dragging",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
+                "description": "This will control the visibility of a shape"
               },
               {
                 "name": "position",
                 "type": "<a href=\"ng://core/utilities/position\">Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will provide all coordinates and sizing of a shape"
               },
               {
                 "name": "conditions",
                 "type": "any[]",
                 "default": "[]",
                 "required": "Optional",
-                "description": ""
+                "description": "Still thinking this one through..."
               }
             ],
             "outputs": [
               {
                 "name": "apply",
                 "type": "Function",
-                "description": ""
-              }
-            ],
-            "folder": "shapes"
-          },
-          {
-            "title": "Elliptical Curve",
-            "usage": "import { EllipticalCurve } from '@ngx-canvas/core';\n\nconst shape = new EllipticalCurve();",
-            "description": "This will add a elliptical curve to the canvas",
-            "inputs": [
-              {
-                "name": "id",
-                "type": "String",
-                "default": "ObjectId()",
-                "required": "Optional",
-                "description": ""
+                "description": "Adds the shape to the canvas, can only be called once per shape"
               },
               {
-                "name": "fill",
-                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
-                "default": "new Fill()",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "font",
-                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
-                "default": "new Font()",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "data",
-                "type": "any",
-                "default": "",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "type",
-                "type": "String",
-                "default": "",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "name",
-                "type": "String",
-                "default": "",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "stroke",
-                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
-                "default": "new Stroke()",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "hidden",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "selected",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "dragging",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "position",
-                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
-                "default": "new Position()",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "conditions",
-                "type": "any[]",
-                "default": "[]",
-                "required": "Optional",
-                "description": ""
-              }
-            ],
-            "outputs": [
-              {
-                "name": "apply",
+                "name": "update",
                 "type": "Function",
-                "description": ""
+                "description": "Modifies a shapes attributes and styles based on values supplied"
+              },
+              {
+                "name": "remove",
+                "type": "Function",
+                "description": "Removes the shape from the canvas, can only be called once per shape"
               }
             ],
             "folder": "shapes"
@@ -765,56 +338,56 @@
                 "type": "String",
                 "default": "ObjectId()",
                 "required": "Optional",
-                "description": ""
+                "description": "This is the unique identifier of a shape"
               },
               {
                 "name": "fill",
                 "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the fill color and style"
               },
               {
                 "name": "font",
                 "type": "<a href=\"ng://core/utilities/font\">Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the font color and style"
               },
               {
                 "name": "data",
                 "type": "any",
                 "default": "",
                 "required": "Optional",
-                "description": ""
+                "description": "Still thinking this one through, maybe just use to store data?"
               },
               {
                 "name": "type",
                 "type": "String",
                 "default": "",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the what shape is drawn on the canvas"
               },
               {
                 "name": "name",
                 "type": "String",
                 "default": "",
                 "required": "Optional",
-                "description": ""
+                "description": "You can use this to give names to your shapes"
               },
               {
                 "name": "stroke",
                 "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the stroke/line color and style"
               },
               {
                 "name": "hidden",
                 "type": "Boolean",
                 "default": "false",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the visibility of a shape"
               },
               {
                 "name": "children",
@@ -824,39 +397,144 @@
                 "description": ""
               },
               {
-                "name": "selected",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "dragging",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
-              },
-              {
                 "name": "position",
                 "type": "<a href=\"ng://core/utilities/position\">Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will provide all coordinates and sizing of a shape"
               },
               {
                 "name": "conditions",
                 "type": "any[]",
                 "default": "[]",
                 "required": "Optional",
-                "description": ""
+                "description": "Still thinking this one through..."
               }
             ],
             "outputs": [
               {
                 "name": "apply",
                 "type": "Function",
+                "description": "Adds the shape to the canvas, can only be called once per shape"
+              },
+              {
+                "name": "update",
+                "type": "Function",
+                "description": "Modifies a shapes attributes and styles based on values supplied"
+              },
+              {
+                "name": "remove",
+                "type": "Function",
+                "description": "Removes the shape from the canvas, can only be called once per shape"
+              }
+            ],
+            "folder": "shapes"
+          },
+          {
+            "title": "Iframe",
+            "usage": "import { Iframe } from '@ngx-canvas/core';\n\nconst shape = new Iframe();",
+            "description": "This will add an iframe to the canvas",
+            "inputs": [
+              {
+                "name": "id",
+                "type": "String",
+                "default": "ObjectId()",
+                "required": "Optional",
+                "description": "This is the unique identifier of a shape"
+              },
+              {
+                "name": "src",
+                "type": "String",
+                "default": "''",
+                "required": "optional",
                 "description": ""
+              },
+              {
+                "name": "fill",
+                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
+                "default": "new Fill()",
+                "required": "Optional",
+                "description": "This will control the fill color and style"
+              },
+              {
+                "name": "font",
+                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
+                "default": "new Font()",
+                "required": "Optional",
+                "description": "This will control the font color and style"
+              },
+              {
+                "name": "data",
+                "type": "any",
+                "default": "",
+                "required": "Optional",
+                "description": "Still thinking this one through, maybe just use to store data?"
+              },
+              {
+                "name": "type",
+                "type": "String",
+                "default": "",
+                "required": "Optional",
+                "description": "This will control the what shape is drawn on the canvas"
+              },
+              {
+                "name": "name",
+                "type": "String",
+                "default": "",
+                "required": "Optional",
+                "description": "You can use this to give names to your shapes"
+              },
+              {
+                "name": "title",
+                "type": "String",
+                "default": "''",
+                "required": "optional",
+                "description": ""
+              },
+              {
+                "name": "stroke",
+                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
+                "default": "new Stroke()",
+                "required": "Optional",
+                "description": "This will control the stroke/line color and style"
+              },
+              {
+                "name": "hidden",
+                "type": "Boolean",
+                "default": "false",
+                "required": "Optional",
+                "description": "This will control the visibility of a shape"
+              },
+              {
+                "name": "position",
+                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
+                "default": "new Position()",
+                "required": "Optional",
+                "description": "This will provide all coordinates and sizing of a shape"
+              },
+              {
+                "name": "conditions",
+                "type": "any[]",
+                "default": "[]",
+                "required": "Optional",
+                "description": "Still thinking this one through..."
+              }
+            ],
+            "outputs": [
+              {
+                "name": "apply",
+                "type": "Function",
+                "description": "Adds the shape to the canvas, can only be called once per shape"
+              },
+              {
+                "name": "update",
+                "type": "Function",
+                "description": "Modifies a shapes attributes and styles based on values supplied"
+              },
+              {
+                "name": "remove",
+                "type": "Function",
+                "description": "Removes the shape from the canvas, can only be called once per shape"
               }
             ],
             "folder": "shapes"
@@ -871,42 +549,42 @@
                 "type": "String",
                 "default": "ObjectId()",
                 "required": "Optional",
-                "description": ""
+                "description": "This is the unique identifier of a shape"
               },
               {
                 "name": "fill",
                 "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the fill color and style"
               },
               {
                 "name": "font",
                 "type": "<a href=\"ng://core/utilities/font\">Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the font color and style"
               },
               {
                 "name": "data",
                 "type": "any",
                 "default": "",
                 "required": "Optional",
-                "description": ""
+                "description": "Still thinking this one through, maybe just use to store data?"
               },
               {
                 "name": "type",
                 "type": "String",
                 "default": "",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the what shape is drawn on the canvas"
               },
               {
                 "name": "name",
                 "type": "String",
                 "default": "",
                 "required": "Optional",
-                "description": ""
+                "description": "You can use this to give names to your shapes"
               },
               {
                 "name": "points",
@@ -920,49 +598,45 @@
                 "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the stroke/line color and style"
               },
               {
                 "name": "hidden",
                 "type": "Boolean",
                 "default": "false",
                 "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "selected",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "dragging",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
+                "description": "This will control the visibility of a shape"
               },
               {
                 "name": "position",
                 "type": "<a href=\"ng://core/utilities/position\">Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will provide all coordinates and sizing of a shape"
               },
               {
                 "name": "conditions",
                 "type": "any[]",
                 "default": "[]",
                 "required": "Optional",
-                "description": ""
+                "description": "Still thinking this one through..."
               }
             ],
             "outputs": [
               {
                 "name": "apply",
                 "type": "Function",
-                "description": ""
+                "description": "Adds the shape to the canvas, can only be called once per shape"
+              },
+              {
+                "name": "update",
+                "type": "Function",
+                "description": "Modifies a shapes attributes and styles based on values supplied"
+              },
+              {
+                "name": "remove",
+                "type": "Function",
+                "description": "Removes the shape from the canvas, can only be called once per shape"
               }
             ],
             "folder": "shapes"
@@ -977,42 +651,42 @@
                 "type": "String",
                 "default": "ObjectId()",
                 "required": "Optional",
-                "description": ""
+                "description": "This is the unique identifier of a shape"
               },
               {
                 "name": "fill",
                 "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the fill color and style"
               },
               {
                 "name": "font",
                 "type": "<a href=\"ng://core/utilities/font\">Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the font color and style"
               },
               {
                 "name": "data",
                 "type": "any",
                 "default": "",
                 "required": "Optional",
-                "description": ""
+                "description": "Still thinking this one through, maybe just use to store data?"
               },
               {
                 "name": "type",
                 "type": "String",
                 "default": "",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the what shape is drawn on the canvas"
               },
               {
                 "name": "name",
                 "type": "String",
                 "default": "",
                 "required": "Optional",
-                "description": ""
+                "description": "You can use this to give names to your shapes"
               },
               {
                 "name": "points",
@@ -1026,49 +700,45 @@
                 "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the stroke/line color and style"
               },
               {
                 "name": "hidden",
                 "type": "Boolean",
                 "default": "false",
                 "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "selected",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "dragging",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
+                "description": "This will control the visibility of a shape"
               },
               {
                 "name": "position",
                 "type": "<a href=\"ng://core/utilities/position\">Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will provide all coordinates and sizing of a shape"
               },
               {
                 "name": "conditions",
                 "type": "any[]",
                 "default": "[]",
                 "required": "Optional",
-                "description": ""
+                "description": "Still thinking this one through..."
               }
             ],
             "outputs": [
               {
                 "name": "apply",
                 "type": "Function",
-                "description": ""
+                "description": "Adds the shape to the canvas, can only be called once per shape"
+              },
+              {
+                "name": "update",
+                "type": "Function",
+                "description": "Modifies a shapes attributes and styles based on values supplied"
+              },
+              {
+                "name": "remove",
+                "type": "Function",
+                "description": "Removes the shape from the canvas, can only be called once per shape"
               }
             ],
             "folder": "shapes"
@@ -1083,42 +753,42 @@
                 "type": "String",
                 "default": "ObjectId()",
                 "required": "Optional",
-                "description": ""
+                "description": "This is the unique identifier of a shape"
               },
               {
                 "name": "fill",
                 "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the fill color and style"
               },
               {
                 "name": "font",
                 "type": "<a href=\"ng://core/utilities/font\">Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the font color and style"
               },
               {
                 "name": "data",
                 "type": "any",
                 "default": "",
                 "required": "Optional",
-                "description": ""
+                "description": "Still thinking this one through, maybe just use to store data?"
               },
               {
                 "name": "type",
                 "type": "String",
                 "default": "",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the what shape is drawn on the canvas"
               },
               {
                 "name": "name",
                 "type": "String",
                 "default": "",
                 "required": "Optional",
-                "description": ""
+                "description": "You can use this to give names to your shapes"
               },
               {
                 "name": "points",
@@ -1132,160 +802,45 @@
                 "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the stroke/line color and style"
               },
               {
                 "name": "hidden",
                 "type": "Boolean",
                 "default": "false",
                 "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "selected",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "dragging",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
+                "description": "This will control the visibility of a shape"
               },
               {
                 "name": "position",
                 "type": "<a href=\"ng://core/utilities/position\">Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will provide all coordinates and sizing of a shape"
               },
               {
                 "name": "conditions",
                 "type": "any[]",
                 "default": "[]",
                 "required": "Optional",
-                "description": ""
+                "description": "Still thinking this one through..."
               }
             ],
             "outputs": [
               {
                 "name": "apply",
                 "type": "Function",
-                "description": ""
-              }
-            ],
-            "folder": "shapes"
-          },
-          {
-            "title": "Quadratic Bezier Curve",
-            "usage": "import { QuadraticBezierCurve } from '@ngx-canvas/core';\n\nconst shape = new QuadraticBezierCurve();",
-            "description": "This will add a quadratic bezier curve to the canvas",
-            "inputs": [
-              {
-                "name": "id",
-                "type": "String",
-                "default": "ObjectId()",
-                "required": "Optional",
-                "description": ""
+                "description": "Adds the shape to the canvas, can only be called once per shape"
               },
               {
-                "name": "fill",
-                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
-                "default": "new Fill()",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "font",
-                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
-                "default": "new Font()",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "data",
-                "type": "any",
-                "default": "",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "type",
-                "type": "String",
-                "default": "",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "name",
-                "type": "String",
-                "default": "",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "value",
-                "type": "String",
-                "default": "''",
-                "required": "optional",
-                "description": ""
-              },
-              {
-                "name": "stroke",
-                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
-                "default": "new Stroke()",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "hidden",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "selected",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "dragging",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "position",
-                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
-                "default": "new Position()",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "conditions",
-                "type": "any[]",
-                "default": "[]",
-                "required": "Optional",
-                "description": ""
-              }
-            ],
-            "outputs": [
-              {
-                "name": "click",
+                "name": "update",
                 "type": "Function",
-                "description": ""
+                "description": "Modifies a shapes attributes and styles based on values supplied"
               },
               {
-                "name": "apply",
+                "name": "remove",
                 "type": "Function",
-                "description": ""
+                "description": "Removes the shape from the canvas, can only be called once per shape"
               }
             ],
             "folder": "shapes"
@@ -1300,7 +855,7 @@
                 "type": "String",
                 "default": "ObjectId()",
                 "required": "Optional",
-                "description": ""
+                "description": "This is the unique identifier of a shape"
               },
               {
                 "name": "min",
@@ -1328,35 +883,35 @@
                 "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the fill color and style"
               },
               {
                 "name": "font",
                 "type": "<a href=\"ng://core/utilities/font\">Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the font color and style"
               },
               {
                 "name": "data",
                 "type": "any",
                 "default": "",
                 "required": "Optional",
-                "description": ""
+                "description": "Still thinking this one through, maybe just use to store data?"
               },
               {
                 "name": "type",
                 "type": "String",
                 "default": "",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the what shape is drawn on the canvas"
               },
               {
                 "name": "name",
                 "type": "String",
                 "default": "",
                 "required": "Optional",
-                "description": ""
+                "description": "You can use this to give names to your shapes"
               },
               {
                 "name": "value",
@@ -1370,49 +925,45 @@
                 "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the stroke/line color and style"
               },
               {
                 "name": "hidden",
                 "type": "Boolean",
                 "default": "false",
                 "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "selected",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "dragging",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
+                "description": "This will control the visibility of a shape"
               },
               {
                 "name": "position",
                 "type": "<a href=\"ng://core/utilities/position\">Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will provide all coordinates and sizing of a shape"
               },
               {
                 "name": "conditions",
                 "type": "any[]",
                 "default": "[]",
                 "required": "Optional",
-                "description": ""
+                "description": "Still thinking this one through..."
               }
             ],
             "outputs": [
               {
                 "name": "apply",
                 "type": "Function",
-                "description": ""
+                "description": "Adds the shape to the canvas, can only be called once per shape"
+              },
+              {
+                "name": "update",
+                "type": "Function",
+                "description": "Modifies a shapes attributes and styles based on values supplied"
+              },
+              {
+                "name": "remove",
+                "type": "Function",
+                "description": "Removes the shape from the canvas, can only be called once per shape"
               }
             ],
             "folder": "shapes"
@@ -1427,197 +978,87 @@
                 "type": "String",
                 "default": "ObjectId()",
                 "required": "Optional",
-                "description": ""
+                "description": "This is the unique identifier of a shape"
               },
               {
                 "name": "fill",
                 "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the fill color and style"
               },
               {
                 "name": "font",
                 "type": "<a href=\"ng://core/utilities/font\">Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the font color and style"
               },
               {
                 "name": "data",
                 "type": "any",
                 "default": "",
                 "required": "Optional",
-                "description": ""
+                "description": "Still thinking this one through, maybe just use to store data?"
               },
               {
                 "name": "type",
                 "type": "String",
                 "default": "",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the what shape is drawn on the canvas"
               },
               {
                 "name": "name",
                 "type": "String",
                 "default": "",
                 "required": "Optional",
-                "description": ""
+                "description": "You can use this to give names to your shapes"
               },
               {
                 "name": "stroke",
                 "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the stroke/line color and style"
               },
               {
                 "name": "hidden",
                 "type": "Boolean",
                 "default": "false",
                 "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "selected",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "dragging",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
+                "description": "This will control the visibility of a shape"
               },
               {
                 "name": "position",
                 "type": "<a href=\"ng://core/utilities/position\">Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will provide all coordinates and sizing of a shape"
               },
               {
                 "name": "conditions",
                 "type": "any[]",
                 "default": "[]",
                 "required": "Optional",
-                "description": ""
+                "description": "Still thinking this one through..."
               }
             ],
             "outputs": [
               {
                 "name": "apply",
                 "type": "Function",
-                "description": ""
-              }
-            ],
-            "folder": "shapes"
-          },
-          {
-            "title": "Row",
-            "usage": "import { Row } from '@ngx-canvas/core';\n\nconst shape = new Row();",
-            "description": "This will add a row to the canvas",
-            "inputs": [
-              {
-                "name": "id",
-                "type": "String",
-                "default": "ObjectId()",
-                "required": "Optional",
-                "description": ""
+                "description": "Adds the shape to the canvas, can only be called once per shape"
               },
               {
-                "name": "fill",
-                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
-                "default": "new Fill()",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "font",
-                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
-                "default": "new Font()",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "data",
-                "type": "any",
-                "default": "",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "type",
-                "type": "String",
-                "default": "",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "name",
-                "type": "String",
-                "default": "",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "stroke",
-                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
-                "default": "new Stroke()",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "hidden",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "columns",
-                "type": "Column[]",
-                "default": "[]",
-                "required": "optional",
-                "description": ""
-              },
-              {
-                "name": "selected",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "dragging",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "position",
-                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
-                "default": "new Position()",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "conditions",
-                "type": "any[]",
-                "default": "[]",
-                "required": "Optional",
-                "description": ""
-              }
-            ],
-            "outputs": [
-              {
-                "name": "apply",
+                "name": "update",
                 "type": "Function",
-                "description": ""
+                "description": "Modifies a shapes attributes and styles based on values supplied"
+              },
+              {
+                "name": "remove",
+                "type": "Function",
+                "description": "Removes the shape from the canvas, can only be called once per shape"
               }
             ],
             "folder": "shapes"
@@ -1632,7 +1073,7 @@
                 "type": "String",
                 "default": "ObjectId()",
                 "required": "Optional",
-                "description": ""
+                "description": "This is the unique identifier of a shape"
               },
               {
                 "name": "rows",
@@ -1646,35 +1087,35 @@
                 "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the fill color and style"
               },
               {
                 "name": "font",
                 "type": "<a href=\"ng://core/utilities/font\">Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the font color and style"
               },
               {
                 "name": "data",
                 "type": "any",
                 "default": "",
                 "required": "Optional",
-                "description": ""
+                "description": "Still thinking this one through, maybe just use to store data?"
               },
               {
                 "name": "type",
                 "type": "String",
                 "default": "",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the what shape is drawn on the canvas"
               },
               {
                 "name": "name",
                 "type": "String",
                 "default": "",
                 "required": "Optional",
-                "description": ""
+                "description": "You can use this to give names to your shapes"
               },
               {
                 "name": "header",
@@ -1695,49 +1136,45 @@
                 "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the stroke/line color and style"
               },
               {
                 "name": "hidden",
                 "type": "Boolean",
                 "default": "false",
                 "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "selected",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "dragging",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
+                "description": "This will control the visibility of a shape"
               },
               {
                 "name": "position",
                 "type": "<a href=\"ng://core/utilities/position\">Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will provide all coordinates and sizing of a shape"
               },
               {
                 "name": "conditions",
                 "type": "any[]",
                 "default": "[]",
                 "required": "Optional",
-                "description": ""
+                "description": "Still thinking this one through..."
               }
             ],
             "outputs": [
               {
                 "name": "apply",
                 "type": "Function",
-                "description": ""
+                "description": "Adds the shape to the canvas, can only be called once per shape"
+              },
+              {
+                "name": "update",
+                "type": "Function",
+                "description": "Modifies a shapes attributes and styles based on values supplied"
+              },
+              {
+                "name": "remove",
+                "type": "Function",
+                "description": "Removes the shape from the canvas, can only be called once per shape"
               }
             ],
             "folder": "shapes"
@@ -1752,42 +1189,42 @@
                 "type": "String",
                 "default": "ObjectId()",
                 "required": "Optional",
-                "description": ""
+                "description": "This is the unique identifier of a shape"
               },
               {
                 "name": "fill",
                 "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the fill color and style"
               },
               {
                 "name": "font",
                 "type": "<a href=\"ng://core/utilities/font\">Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the font color and style"
               },
               {
                 "name": "data",
                 "type": "any",
                 "default": "",
                 "required": "Optional",
-                "description": ""
+                "description": "Still thinking this one through, maybe just use to store data?"
               },
               {
                 "name": "type",
                 "type": "String",
                 "default": "",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the what shape is drawn on the canvas"
               },
               {
                 "name": "name",
                 "type": "String",
                 "default": "",
                 "required": "Optional",
-                "description": ""
+                "description": "You can use this to give names to your shapes"
               },
               {
                 "name": "value",
@@ -1801,49 +1238,45 @@
                 "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the stroke/line color and style"
               },
               {
                 "name": "hidden",
                 "type": "Boolean",
                 "default": "false",
                 "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "selected",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "dragging",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
+                "description": "This will control the visibility of a shape"
               },
               {
                 "name": "position",
                 "type": "<a href=\"ng://core/utilities/position\">Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will provide all coordinates and sizing of a shape"
               },
               {
                 "name": "conditions",
                 "type": "any[]",
                 "default": "[]",
                 "required": "Optional",
-                "description": ""
+                "description": "Still thinking this one through..."
               }
             ],
             "outputs": [
               {
                 "name": "apply",
                 "type": "Function",
-                "description": ""
+                "description": "Adds the shape to the canvas, can only be called once per shape"
+              },
+              {
+                "name": "update",
+                "type": "Function",
+                "description": "Modifies a shapes attributes and styles based on values supplied"
+              },
+              {
+                "name": "remove",
+                "type": "Function",
+                "description": "Removes the shape from the canvas, can only be called once per shape"
               }
             ],
             "folder": "shapes"
@@ -1858,7 +1291,7 @@
                 "type": "String",
                 "default": "ObjectId()",
                 "required": "Optional",
-                "description": ""
+                "description": "This is the unique identifier of a shape"
               },
               {
                 "name": "src",
@@ -1872,84 +1305,80 @@
                 "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the fill color and style"
               },
               {
                 "name": "font",
                 "type": "<a href=\"ng://core/utilities/font\">Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the font color and style"
               },
               {
                 "name": "data",
                 "type": "any",
                 "default": "",
                 "required": "Optional",
-                "description": ""
+                "description": "Still thinking this one through, maybe just use to store data?"
               },
               {
                 "name": "type",
                 "type": "String",
                 "default": "",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the what shape is drawn on the canvas"
               },
               {
                 "name": "name",
                 "type": "String",
                 "default": "",
                 "required": "Optional",
-                "description": ""
+                "description": "You can use this to give names to your shapes"
               },
               {
                 "name": "stroke",
                 "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will control the stroke/line color and style"
               },
               {
                 "name": "hidden",
                 "type": "Boolean",
                 "default": "false",
                 "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "selected",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
-              },
-              {
-                "name": "dragging",
-                "type": "Boolean",
-                "default": "false",
-                "required": "Optional",
-                "description": ""
+                "description": "This will control the visibility of a shape"
               },
               {
                 "name": "position",
                 "type": "<a href=\"ng://core/utilities/position\">Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
-                "description": ""
+                "description": "This will provide all coordinates and sizing of a shape"
               },
               {
                 "name": "conditions",
                 "type": "any[]",
                 "default": "[]",
                 "required": "Optional",
-                "description": ""
+                "description": "Still thinking this one through..."
               }
             ],
             "outputs": [
               {
                 "name": "apply",
                 "type": "Function",
-                "description": ""
+                "description": "Adds the shape to the canvas, can only be called once per shape"
+              },
+              {
+                "name": "update",
+                "type": "Function",
+                "description": "Modifies a shapes attributes and styles based on values supplied"
+              },
+              {
+                "name": "remove",
+                "type": "Function",
+                "description": "Removes the shape from the canvas, can only be called once per shape"
               }
             ],
             "folder": "shapes"
