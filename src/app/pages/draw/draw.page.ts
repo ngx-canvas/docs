@@ -17,13 +17,13 @@ export class DrawPage implements AfterViewInit {
 
   private load(done: Function) {
     this.http.get('./assets/data.json').subscribe((data: any) => {
-      this.folders = data.filter((o: any) => o.project === 'core')[0].folders
+      this.folders = data.filter((o: any) => o.project === 'draw')[0].folders
       this.folders.forEach(folder => {
-        folder.id = `core-${folder.name.toLowerCase().split(' ').join('-')}`
-        folder.route = `/core/${folder.name.toLowerCase().split(' ').join('-')}`
+        folder.id = `draw-${folder.name.toLowerCase().split(' ').join('-')}`
+        folder.route = `/draw/${folder.name.toLowerCase().split(' ').join('-')}`
         folder.items.forEach(item => {
-          item.id = `core-${folder.name.toLowerCase().split(' ').join('-')}-${item.title.toLowerCase().split(' ').join('-')}`
-          item.route = `/core/${folder.name.toLowerCase().split(' ').join('-')}/${item.title.toLowerCase().split(' ').join('-')}`
+          item.id = `draw-${folder.name.toLowerCase().split(' ').join('-')}-${item.title.toLowerCase().split(' ').join('-')}`
+          item.route = `/draw/${folder.name.toLowerCase().split(' ').join('-')}/${item.title.toLowerCase().split(' ').join('-')}`
         })
       })
       done()
@@ -40,10 +40,10 @@ export class DrawPage implements AfterViewInit {
       }
     }, false)
 
-    this.title.setTitle('NGXCANVAS | CORE DOCS')
+    this.title.setTitle('NGXCANVAS | DRAW DOCS')
 
     this.route.params.subscribe((params: any) => {
-      const id = ['core']
+      const id = ['draw']
       if (params.section) id.push(params.section)
       if (params.subsection) id.push(params.subsection)
       const element = document.getElementById(id.join('-'))
@@ -53,7 +53,7 @@ export class DrawPage implements AfterViewInit {
     this.load(() => {
       setTimeout(() => {
         const params: any = this.route.snapshot.params
-        const id = ['core']
+        const id = ['draw']
         if (params.section) id.push(params.section)
         if (params.subsection) id.push(params.subsection)
         const element = document.getElementById(id.join('-'))
