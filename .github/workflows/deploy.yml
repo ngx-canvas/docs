@@ -30,7 +30,7 @@ jobs:
     - name: Build & Move Documentation
       run: |
         node sdk/scripts/docify.js
-        cp sdk/scripts/data.json src/assets/data.json
+        cp sdk/data.json src/assets/data.json
 
     - name: Build Angular application
       run: ng build --base-href=https://ngx-canvas.github.io/docs/
