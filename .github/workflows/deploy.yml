@@ -29,7 +29,7 @@ jobs:
 
     - name: Build & Move Documentation
       run: |
-        cp sdk
+        cd sdk
         node scripts/docify.js
         mv data.json ../src/assets/data.json
 
