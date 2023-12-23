@@ -32,6 +32,7 @@ jobs:
         cd sdk
         node scripts/docify.js
         mv data.json ../src/assets/data.json
+        cd ..
 
     - name: Build Angular application
       run: ng build --base-href=https://ngx-canvas.github.io/docs/
