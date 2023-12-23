@@ -7,6 +7,10 @@ const routes: Routes = [
     loadChildren: () => import('./pages/core/core.module').then(m => m.CorePageModule)
   },
   {
+    path: 'draw',
+    loadChildren: () => import('./pages/draw/draw.module').then(m => m.DrawPageModule)
+  },
+  {
     path: '**',
     redirectTo: 'core'
   }
