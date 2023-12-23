@@ -1452,6 +1452,14 @@
             "description": "This will add a stroke to the canvas",
             "inputs": [],
             "outputs": []
+          },
+          {
+            "title": "Style",
+            "usage": "import { Style } from '@ngx-canvas/core';\n\nconst shape = new Style();",
+            "folder": "utilities",
+            "description": "This will add a style to the canvas",
+            "inputs": [],
+            "outputs": []
           }
         ]
       }
@@ -1459,6 +1467,85 @@
   },
   {
     "project": "draw",
-    "folders": []
+    "folders": [
+      {
+        "name": "Draw",
+        "subfolder": true,
+        "description": "",
+        "inputs": [
+          {
+            "name": "id",
+            "type": "String",
+            "default": "NA",
+            "required": "required",
+            "description": "This is the id of the element you want to append the project"
+          }
+        ],
+        "outputs": [],
+        "items": []
+      },
+      {
+        "name": "tools",
+        "subfolder": true,
+        "items": [
+          {
+            "title": "Aligner",
+            "usage": "import { AlignerTool } from '@ngx-canvas/draw';\n\nconst aligner = new AlignerTool();",
+            "description": "This will initialise the aligner tool. This tool will arrange selected shapes about one anothers positions",
+            "inputs": [],
+            "outputs": [],
+            "folder": "tools"
+          },
+          {
+            "title": "Grid",
+            "usage": "import { GridTool } from '@ngx-canvas/draw';\n\nconst grid = new GridTool();",
+            "description": "This will initialise the grid tool. Enabling the grid will allow for more accurate drawing",
+            "inputs": [],
+            "outputs": [],
+            "folder": "tools"
+          },
+          {
+            "title": "Group",
+            "usage": "import { GroupTool } from '@ngx-canvas/draw';\n\nconst group = new GroupTool();",
+            "description": "This will initialise the group tool. This will allow users to merge and separate shapes",
+            "inputs": [],
+            "outputs": [],
+            "folder": "tools"
+          },
+          {
+            "title": "Momento",
+            "usage": "import { MomentoTool } from '@ngx-canvas/draw';\n\nconst momento = new MomentoTool();",
+            "description": "This will initialise the momento tool. This will track all changes while drawing and allow users to go back or jump forward to previous and future states",
+            "inputs": [],
+            "outputs": [],
+            "folder": "tools"
+          },
+          {
+            "title": "Ruler",
+            "usage": "import { RulerTool } from '@ngx-canvas/draw';\n\nconst ruler = new RulerTool();",
+            "description": "This will initialise the ruler tool. This will show a scale ruler about the XY axes. It will allow users to drop fixes and draw more accurately",
+            "inputs": [],
+            "outputs": [],
+            "folder": "tools"
+          },
+          {
+            "title": "Select",
+            "usage": "import { SelectTool } from '@ngx-canvas/draw';\n\nconst select = new SelectTool();",
+            "description": "This will initialise the select tool. This will allow users to select shapes on the canvas",
+            "inputs": [],
+            "outputs": [],
+            "folder": "tools"
+          },
+          {
+            "title": "Zoom",
+            "usage": "import { ZoomTool } from '@ngx-canvas/draw';\n\nconst zoom = new ZoomTool();",
+            "description": "This will initialise the zoom tool. This will allow users to scale the canvas",
+            "inputs": [],
+            "outputs": [],
+            "folder": "tools"
+          }
+        ]
+      }
+    ]
   }
 ]
