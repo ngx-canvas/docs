@@ -1,0 +1,40 @@
+name: Build and Deploy Angular App
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout source repository
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '18.x'
+
+    - name: Install Angular CLI
+      run: npm install -g @angular/cli
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Clone sdk repository
+      run: git clone https://github.com/ngx-canvas/sdk.git
+
+    - name: Build & Move Documentation
+      run: |
+        cd sdk/
+        node scripts/docify.js
+        mv dist/documentation.json ../src/assets/data.json
+
+    - name: Build Angular application
+      run: ng build --base-href=https://ngx-canvas.github.io/docs/
+
+    - name: Clone destination repository
+      run: git clone https://github.com/ngx-canvas/docs.git

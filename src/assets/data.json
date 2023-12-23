@@ -1452,6 +1452,14 @@
             "description": "This will add a stroke to the canvas",
             "inputs": [],
             "outputs": []
+          },
+          {
+            "title": "Style",
+            "usage": "import { Style } from '@ngx-canvas/core';\n\nconst shape = new Style();",
+            "folder": "utilities",
+            "description": "This will add a style to the canvas",
+            "inputs": [],
+            "outputs": []
           }
         ]
       }
