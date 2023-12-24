@@ -31,7 +31,7 @@ jobs:
       run: |
         cd sdk
         node scripts/docify.js
-        mv data.json ../src/assets/data.json
+        mv data.ts ../src/assets/data.ts
         cd ..
 
     - name: Build Angular application
