@@ -33,4 +33,25 @@
   </mat-toolbar-row>
 </mat-toolbar>
 
-<router-outlet></router-outlet>
+<mat-drawer-container [hasBackdrop]="false">
+  <mat-drawer mode="over" opened>
+    @for (folder of folders; track folder) {
+      <h2 matRipple [routerLink]="folder.route" routerLinkActive="active">
+        {{ folder.name }}
+      </h2>
+      @if (folder.items && folder.items.length > 0) {
+        <ul>
+          @for (item of folder.items; track item) {
+            <li matRipple [routerLink]="item.route" routerLinkActive="active">
+              {{ item.title }}
+            </li>
+          }
+        </ul>
+      }
+    }
+  </mat-drawer>
+  
+  <mat-drawer-content>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>

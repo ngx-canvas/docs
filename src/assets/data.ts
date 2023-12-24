@@ -1,4 +1,4 @@
-[
+export const data = [
   {
     "project": "core",
     "folders": [
@@ -1467,6 +1467,13 @@
   },
   {
     "project": "draw",
-    "folders": []
+    "folders": [
+      {
+        "name": "Draw",
+        "subfolder": true,
+        "description": "",
+        "items": []
+      }
+    ]
   }
 ]
