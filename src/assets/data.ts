@@ -57,14 +57,14 @@ export const data = [
               },
               {
                 "name": "fill",
-                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=fill'>Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
                 "description": "This will control the fill color and style"
               },
               {
                 "name": "font",
-                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=font'>Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
                 "description": "This will control the font color and style"
@@ -92,7 +92,7 @@ export const data = [
               },
               {
                 "name": "stroke",
-                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=stroke'>Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
                 "description": "This will control the stroke/line color and style"
@@ -106,7 +106,7 @@ export const data = [
               },
               {
                 "name": "position",
-                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=position'>Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
                 "description": "This will provide all coordinates and sizing of a shape"
@@ -152,14 +152,14 @@ export const data = [
               },
               {
                 "name": "fill",
-                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=fill'>Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
                 "description": "This will control the fill color and style"
               },
               {
                 "name": "font",
-                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=font'>Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
                 "description": "This will control the font color and style"
@@ -187,7 +187,7 @@ export const data = [
               },
               {
                 "name": "stroke",
-                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=stroke'>Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
                 "description": "This will control the stroke/line color and style"
@@ -201,7 +201,7 @@ export const data = [
               },
               {
                 "name": "position",
-                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=position'>Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
                 "description": "This will provide all coordinates and sizing of a shape"
@@ -247,14 +247,14 @@ export const data = [
               },
               {
                 "name": "fill",
-                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=fill'>Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
                 "description": "This will control the fill color and style"
               },
               {
                 "name": "font",
-                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=font'>Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
                 "description": "This will control the font color and style"
@@ -282,7 +282,7 @@ export const data = [
               },
               {
                 "name": "stroke",
-                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=stroke'>Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
                 "description": "This will control the stroke/line color and style"
@@ -296,7 +296,7 @@ export const data = [
               },
               {
                 "name": "position",
-                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=position'>Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
                 "description": "This will provide all coordinates and sizing of a shape"
@@ -342,14 +342,14 @@ export const data = [
               },
               {
                 "name": "fill",
-                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=fill'>Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
                 "description": "This will control the fill color and style"
               },
               {
                 "name": "font",
-                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=font'>Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
                 "description": "This will control the font color and style"
@@ -377,7 +377,7 @@ export const data = [
               },
               {
                 "name": "stroke",
-                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=stroke'>Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
                 "description": "This will control the stroke/line color and style"
@@ -398,7 +398,7 @@ export const data = [
               },
               {
                 "name": "position",
-                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=position'>Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
                 "description": "This will provide all coordinates and sizing of a shape"
@@ -451,14 +451,14 @@ export const data = [
               },
               {
                 "name": "fill",
-                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=fill'>Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
                 "description": "This will control the fill color and style"
               },
               {
                 "name": "font",
-                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=font'>Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
                 "description": "This will control the font color and style"
@@ -493,7 +493,7 @@ export const data = [
               },
               {
                 "name": "stroke",
-                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=stroke'>Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
                 "description": "This will control the stroke/line color and style"
@@ -507,7 +507,7 @@ export const data = [
               },
               {
                 "name": "position",
-                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=position'>Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
                 "description": "This will provide all coordinates and sizing of a shape"
@@ -553,14 +553,14 @@ export const data = [
               },
               {
                 "name": "fill",
-                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=fill'>Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
                 "description": "This will control the fill color and style"
               },
               {
                 "name": "font",
-                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=font'>Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
                 "description": "This will control the font color and style"
@@ -595,7 +595,7 @@ export const data = [
               },
               {
                 "name": "stroke",
-                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=stroke'>Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
                 "description": "This will control the stroke/line color and style"
@@ -609,7 +609,7 @@ export const data = [
               },
               {
                 "name": "position",
-                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=position'>Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
                 "description": "This will provide all coordinates and sizing of a shape"
@@ -655,14 +655,14 @@ export const data = [
               },
               {
                 "name": "fill",
-                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=fill'>Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
                 "description": "This will control the fill color and style"
               },
               {
                 "name": "font",
-                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=font'>Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
                 "description": "This will control the font color and style"
@@ -697,7 +697,7 @@ export const data = [
               },
               {
                 "name": "stroke",
-                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=stroke'>Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
                 "description": "This will control the stroke/line color and style"
@@ -711,7 +711,7 @@ export const data = [
               },
               {
                 "name": "position",
-                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=position'>Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
                 "description": "This will provide all coordinates and sizing of a shape"
@@ -757,14 +757,14 @@ export const data = [
               },
               {
                 "name": "fill",
-                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=fill'>Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
                 "description": "This will control the fill color and style"
               },
               {
                 "name": "font",
-                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=font'>Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
                 "description": "This will control the font color and style"
@@ -799,7 +799,7 @@ export const data = [
               },
               {
                 "name": "stroke",
-                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=stroke'>Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
                 "description": "This will control the stroke/line color and style"
@@ -813,7 +813,7 @@ export const data = [
               },
               {
                 "name": "position",
-                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=position'>Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
                 "description": "This will provide all coordinates and sizing of a shape"
@@ -880,14 +880,14 @@ export const data = [
               },
               {
                 "name": "fill",
-                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=fill'>Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
                 "description": "This will control the fill color and style"
               },
               {
                 "name": "font",
-                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=font'>Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
                 "description": "This will control the font color and style"
@@ -922,7 +922,7 @@ export const data = [
               },
               {
                 "name": "stroke",
-                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=stroke'>Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
                 "description": "This will control the stroke/line color and style"
@@ -936,7 +936,7 @@ export const data = [
               },
               {
                 "name": "position",
-                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=position'>Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
                 "description": "This will provide all coordinates and sizing of a shape"
@@ -982,14 +982,14 @@ export const data = [
               },
               {
                 "name": "fill",
-                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=fill'>Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
                 "description": "This will control the fill color and style"
               },
               {
                 "name": "font",
-                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=font'>Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
                 "description": "This will control the font color and style"
@@ -1017,7 +1017,7 @@ export const data = [
               },
               {
                 "name": "stroke",
-                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=stroke'>Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
                 "description": "This will control the stroke/line color and style"
@@ -1031,7 +1031,7 @@ export const data = [
               },
               {
                 "name": "position",
-                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=position'>Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
                 "description": "This will provide all coordinates and sizing of a shape"
@@ -1084,14 +1084,14 @@ export const data = [
               },
               {
                 "name": "fill",
-                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=fill'>Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
                 "description": "This will control the fill color and style"
               },
               {
                 "name": "font",
-                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=font'>Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
                 "description": "This will control the font color and style"
@@ -1133,7 +1133,7 @@ export const data = [
               },
               {
                 "name": "stroke",
-                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=stroke'>Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
                 "description": "This will control the stroke/line color and style"
@@ -1147,7 +1147,7 @@ export const data = [
               },
               {
                 "name": "position",
-                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=position'>Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
                 "description": "This will provide all coordinates and sizing of a shape"
@@ -1193,14 +1193,14 @@ export const data = [
               },
               {
                 "name": "fill",
-                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=fill'>Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
                 "description": "This will control the fill color and style"
               },
               {
                 "name": "font",
-                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=font'>Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
                 "description": "This will control the font color and style"
@@ -1235,7 +1235,7 @@ export const data = [
               },
               {
                 "name": "stroke",
-                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=stroke'>Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
                 "description": "This will control the stroke/line color and style"
@@ -1249,7 +1249,7 @@ export const data = [
               },
               {
                 "name": "position",
-                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=position'>Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
                 "description": "This will provide all coordinates and sizing of a shape"
@@ -1302,14 +1302,14 @@ export const data = [
               },
               {
                 "name": "fill",
-                "type": "<a href=\"ng://core/utilities/fill\">Fill</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=fill'>Fill</a>",
                 "default": "new Fill()",
                 "required": "Optional",
                 "description": "This will control the fill color and style"
               },
               {
                 "name": "font",
-                "type": "<a href=\"ng://core/utilities/font\">Font</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=font'>Font</a>",
                 "default": "new Font()",
                 "required": "Optional",
                 "description": "This will control the font color and style"
@@ -1337,7 +1337,7 @@ export const data = [
               },
               {
                 "name": "stroke",
-                "type": "<a href=\"ng://core/utilities/stroke\">Stroke</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=stroke'>Stroke</a>",
                 "default": "new Stroke()",
                 "required": "Optional",
                 "description": "This will control the stroke/line color and style"
@@ -1351,7 +1351,7 @@ export const data = [
               },
               {
                 "name": "position",
-                "type": "<a href=\"ng://core/utilities/position\">Position</a>",
+                "type": "<a href='REPLACE_WITH_HOST/docs/?module=core&section=utilities&subsection=position'>Position</a>",
                 "default": "new Position()",
                 "required": "Optional",
                 "description": "This will provide all coordinates and sizing of a shape"
@@ -1472,7 +1472,79 @@ export const data = [
         "name": "Draw",
         "subfolder": true,
         "description": "",
+        "inputs": [
+          {
+            "name": "id",
+            "type": "String",
+            "default": "NA",
+            "required": "required",
+            "description": "This is the id of the element you want to append the project"
+          }
+        ],
+        "outputs": [],
         "items": []
+      },
+      {
+        "name": "Tools",
+        "subfolder": true,
+        "items": [
+          {
+            "title": "Aligner",
+            "usage": "import { AlignerTool } from '@ngx-canvas/draw';\n\nconst aligner = new AlignerTool();",
+            "description": "This will initialise the aligner tool. This tool will arrange selected shapes about one anothers positions",
+            "inputs": [],
+            "outputs": [],
+            "folder": "tools"
+          },
+          {
+            "title": "Grid",
+            "usage": "import { GridTool } from '@ngx-canvas/draw';\n\nconst grid = new GridTool();",
+            "description": "This will initialise the grid tool. Enabling the grid will allow for more accurate drawing",
+            "inputs": [],
+            "outputs": [],
+            "folder": "tools"
+          },
+          {
+            "title": "Group",
+            "usage": "import { GroupTool } from '@ngx-canvas/draw';\n\nconst group = new GroupTool();",
+            "description": "This will initialise the group tool. This will allow users to merge and separate shapes",
+            "inputs": [],
+            "outputs": [],
+            "folder": "tools"
+          },
+          {
+            "title": "Momento",
+            "usage": "import { MomentoTool } from '@ngx-canvas/draw';\n\nconst momento = new MomentoTool();",
+            "description": "This will initialise the momento tool. This will track all changes while drawing and allow users to go back or jump forward to previous and future states",
+            "inputs": [],
+            "outputs": [],
+            "folder": "tools"
+          },
+          {
+            "title": "Ruler",
+            "usage": "import { RulerTool } from '@ngx-canvas/draw';\n\nconst ruler = new RulerTool();",
+            "description": "This will initialise the ruler tool. This will show a scale ruler about the XY axes. It will allow users to drop fixes and draw more accurately",
+            "inputs": [],
+            "outputs": [],
+            "folder": "tools"
+          },
+          {
+            "title": "Select",
+            "usage": "import { SelectTool } from '@ngx-canvas/draw';\n\nconst select = new SelectTool();",
+            "description": "This will initialise the select tool. This will allow users to select shapes on the canvas",
+            "inputs": [],
+            "outputs": [],
+            "folder": "tools"
+          },
+          {
+            "title": "Zoom",
+            "usage": "import { ZoomTool } from '@ngx-canvas/draw';\n\nconst zoom = new ZoomTool();",
+            "description": "This will initialise the zoom tool. This will allow users to scale the canvas",
+            "inputs": [],
+            "outputs": [],
+            "folder": "tools"
+          }
+        ]
       }
     ]
   }

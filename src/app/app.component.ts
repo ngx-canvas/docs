@@ -2,12 +2,13 @@ import { data } from '../assets/data';
 import { Title } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { OnInit, Component } from '@angular/core';
-import { Router, RouterModule, RouterOutlet, NavigationEnd } from '@angular/router';
+import { RouterModule, RouterOutlet, ActivatedRoute } from '@angular/router';
 
 /* --- MATERIAL --- */
 import { MatIconModule } from '@angular/material/icon';
 import { MatRippleModule } from '@angular/material/core';
 import { ClipboardModule } from '@angular/cdk/clipboard';
+import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
@@ -15,8 +16,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
   imports: [
     CommonModule,
     RouterModule,
-    MatIconModule,
     RouterOutlet,
+    MatIconModule,
+    MatButtonModule,
     ClipboardModule,
     MatRippleModule,
     MatSidenavModule,
@@ -30,34 +32,53 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 
 export class AppComponent implements OnInit {
 
-  constructor(private title: Title, private router: Router) { }
+  constructor(private title: Title, private route: ActivatedRoute) { }
 
   public folders: Folder[] = []
 
+  public goto(id: string) {
+    document.getElementById(id)?.scrollIntoView({
+      behavior: 'smooth'
+    })
+  }
+
   ngOnInit(): void {
-    this.router.events.subscribe((event) => {
-      if (event instanceof NavigationEnd) {
-        const moduleId = <string>event.urlAfterRedirects.split('/').filter(o => o.length > 0).at(0)
-        this.folders = <any>data.find((o) => o.project === moduleId)?.folders
-        this.folders = this.folders.map((o) => {
-          o.items = o.items.map(i => {
-            i.route = ['', moduleId, o.name, i.title].map(o => o.toLowerCase()).join('/')
-            return i
+    this.route.queryParams.subscribe((event: any) => {
+      this.folders = <any>data.find((o) => o.project === event.module)?.folders
+      this.folders = this.folders ? this.folders.map((o) => {
+        o.items = o.items.map(i => {
+          i.params = {
+            module: event.module.split(' ').join('-').toLowerCase(),
+            section: o.name.split(' ').join('-').toLowerCase(),
+            subsection: i.title.split(' ').join('-').toLowerCase()
+          }
+          i.id = [i.params.module, i.params.section, i.params.subsection].filter(o => o).join('-')
+          i.inputs.forEach((input: any) => {
+            input.type = input.type.replace('REPLACE_WITH_HOST', window.location.origin)
           })
-          o.route = ['', moduleId, o.name].map((o) => o.toLowerCase()).join('/')
-          return o
+          return i
         })
-        this.title.setTitle(`NGXCANVAS | ${moduleId.toUpperCase()} DOCS`)
-      }
+        o.params = {
+          module: event.module.split(' ').join('-').toLowerCase(),
+          section: o.name.split(' ').join('-').toLowerCase()
+        }
+        o.id = [o.params.module, o.params.section].filter(o => o).join('-')
+        return o
+      }) : []
+
+      this.title.setTitle(`NGXCANVAS | ${event.module?.toUpperCase()} DOCS`)
+
+      setTimeout(() => this.goto([event.module, event.section, event.subsection].filter(o => o).join('-')), 50)
     })
   }
 
 }
 
 interface Folder {
+  id: string
   name: string
-  route: string
   items: any[]
+  params: any
   subfolder: boolean
   description: string
 }

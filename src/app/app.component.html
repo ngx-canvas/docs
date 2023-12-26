@@ -1,6 +1,6 @@
 <mat-toolbar id="toolbar">
   <mat-toolbar-row class="container">
-    <a routerLink="/home" rel="noreferrer">
+    <a routerLink="/" rel="noreferrer">
       <img src="./assets/icons/icon-512x512.png" alt="logo" class="logo" width="48" height="48">
     </a>
 
@@ -10,12 +10,12 @@
 
     <ul>
       <li>
-        <a routerLink="/core" routerLinkActive="active" rel="noreferrer">
+        <a routerLink="/" [queryParams]="{ module: 'core' }" routerLinkActive="active" rel="noreferrer">
           Core
         </a>
       </li>
       <li>
-        <a routerLink="/draw" routerLinkActive="active" rel="noreferrer">
+        <a routerLink="/" [queryParams]="{ module: 'draw' }" routerLinkActive="active" rel="noreferrer">
           Draw
         </a>
       </li>
@@ -36,13 +36,13 @@
 <mat-drawer-container [hasBackdrop]="false">
   <mat-drawer mode="over" opened>
     @for (folder of folders; track folder) {
-      <h2 matRipple [routerLink]="folder.route" routerLinkActive="active">
+      <h2>
         {{ folder.name }}
       </h2>
       @if (folder.items && folder.items.length > 0) {
         <ul>
           @for (item of folder.items; track item) {
-            <li matRipple [routerLink]="item.route" routerLinkActive="active">
+            <li matRipple routerLink="/" [queryParams]="item.params" routerLinkActive="active">
               {{ item.title }}
             </li>
           }
@@ -52,6 +52,90 @@
   </mat-drawer>
   
   <mat-drawer-content>
-    <router-outlet></router-outlet>
+    @for (folder of folders; track folder) {
+      <div class="container">
+        <!-- <h1 [id]="folder.id">
+          {{ folder.name }}
+        </h1>
+        <p [innerHTML]="folder.description"></p> -->
+        @for (item of folder.items; track item) {
+          <section [id]="item.id">
+            @if (item.title) {
+              <h2>
+                {{ item.title }}
+              </h2>
+            }
+    
+            <p [innerHtml]="item.description"></p>
+    
+            @if (item.usage) {
+              <div class="code-container">
+                <button aria-label="copy button" mat-icon-button [cdkCopyToClipboard]="item.usage">
+                  <mat-icon>
+                    content_copy
+                  </mat-icon>
+                </button>
+      
+                <pre><code class="prettyprint" [innerHtml]="item.usage"></code></pre>
+              </div>
+            }
+    
+            @if (item.inputs.length > 0) {
+              <h4>
+                Inputs
+              </h4>
+    
+              <table>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Default</th>
+                    <th>Required</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  @for (row of item.inputs; track row) {
+                    <tr>
+                      <td [innerHtml]="row.name"></td>
+                      <td [innerHtml]="row.type"></td>
+                      <td [innerHtml]="row.default"></td>
+                      <td [innerHtml]="row.required"></td>
+                      <td [innerHtml]="row.description"></td>
+                    </tr>
+                  }
+                </tbody>
+              </table>
+            }
+    
+            @if (item.outputs.length > 0) {
+              <h4>
+                Outputs
+              </h4>
+    
+              <table>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  @for (row of item.outputs; track row) {
+                    <tr>
+                      <td [innerHtml]="row.name"></td>
+                      <td [innerHtml]="row.type"></td>
+                      <td [innerHtml]="row.description"></td>
+                    </tr>
+                  }
+                </tbody>
+              </table>
+            }
+          </section>
+        }
+      </div>
+    }
   </mat-drawer-content>
 </mat-drawer-container>
