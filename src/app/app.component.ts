@@ -2,7 +2,7 @@ import { data } from '../assets/data';
 import { Title } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { OnInit, Component } from '@angular/core';
-import { RouterModule, RouterOutlet, ActivatedRoute } from '@angular/router';
+import { Router, RouterModule, RouterOutlet, ActivatedRoute } from '@angular/router';
 
 /* --- MATERIAL --- */
 import { MatIconModule } from '@angular/material/icon';
@@ -32,7 +32,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 
 export class AppComponent implements OnInit {
 
-  constructor(private title: Title, private route: ActivatedRoute) { }
+  constructor(private title: Title, private route: ActivatedRoute, private router: Router) { }
 
   public folders: Folder[] = []
 
@@ -70,6 +70,7 @@ export class AppComponent implements OnInit {
 
       setTimeout(() => this.goto([event.module, event.section, event.subsection].filter(o => o).join('-')), 50)
     })
+    if (window.location.search.length === 0) this.router.navigate(['/'], { queryParams: { module: data.at(0)?.project } })
   }
 
 }
